@@ -16,3 +16,9 @@ test('toutes les années divisibles par 4 mais pas par 100 sont des années biss
     expect(isAnneeBissextile(2012)).toBeTruthy();
     expect(isAnneeBissextile(2016)).toBeTruthy();
 })
+
+test('Toutes les années non divisibles par 4 ne sont PAS des années bissextiles', () => {
+    expect(isAnneeBissextile(2017)).toBe(false);
+    expect(isAnneeBissextile(2018)).toBe(false);
+    expect(isAnneeBissextile(2019)).toBe(false);
+})

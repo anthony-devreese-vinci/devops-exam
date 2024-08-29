@@ -7,6 +7,7 @@ function isAnneeBissextile(annee) {
         return true;
     }
     return false;
+    
 }
 
 module.exports = isAnneeBissextile;
